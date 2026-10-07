@@ -1,0 +1,20 @@
+RÉPERTOIRE DES EXPOSANTS — MALARTIC
+
+Le site contient 101 fiches en français et en anglais.
+Pour tester : ouvrir index.html dans un navigateur après extraction complète.
+Pour héberger : déposer index.html, css, js, data et assets à la racine du site en conservant tous les dossiers.
+Le ZIP contient plus de 100 fichiers : si une interface impose une limite par envoi, transférer les dossiers en plusieurs envois.
+
+Intégration sur le site de l’événement : remplacer URL_DU_REPERTOIRE par l’adresse publique de la page index.html.
+
+<iframe src="URL_DU_REPERTOIRE" title="Répertoire des exposants" style="display:block;width:100%;max-width:100%;height:1000px;border:0;" allow="autoplay"></iframe>
+
+La page s’adapte à la largeur disponible, y compris lorsqu’elle est intégrée dans un iframe sur téléphone.
+Les plans ExpoFP nécessitent une connexion Internet et sont chargés lorsque le visiteur choisit un plan.
+Le bouton de langue traduit l’interface et les descriptions du répertoire. Les plans externes conservent les langues offertes par ExpoFP.
+Le son au survol s’active au premier clic sur le bouton de son.
+Les noms d’entreprises, les logos et les destinations des liens proviennent du document fourni.
+Les six descriptions absentes ou à venir sont conservées comme telles.
+
+CanShield a été ajouté avec le logo et le lien fournis; sa description est à venir.
+À chaque ouverture ou nouvelle sélection d’un plan, la carte intégrée est recréée pour déclencher un nouveau chargement, sans ajouter de paramètre à sa barre de recherche. Cela fonctionne aussi en cliquant à nouveau sur le plan actif. ExpoFP conserve le contrôle de ses propres données et caches internes.

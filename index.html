@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#244e39">
+  <title>Exposants | Exposition minière et forestière de Malartic</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#contenu" data-text="skip">Aller au contenu</a>
+<header class="mast">
+  <div class="mast-inner">
+    <img class="brand" src="assets/logos/exposition-malartic.png" alt="Exposition minière et forestière de Malartic">
+    <div class="mast-copy"><p class="eyebrow" data-text="event">Exposition minière et forestière de Malartic</p><h1 data-text="headline">Découvrez les exposants</h1><p class="intro" data-text="intro">Des entreprises à rencontrer, des expertises à découvrir.</p></div>
+  </div>
+</header>
+<div class="page">
+  <nav class="controls" aria-label="Options du répertoire" id="controls">
+    <a class="button primary" id="find" href="#plans" data-text="find">Trouver les exposants</a>
+    <div class="utility"><button class="button" id="language" type="button" lang="en">English</button><button class="button sound" id="sound" type="button" aria-pressed="false">♪ Activer le son</button></div>
+  </nav>
+  <main id="contenu">
+    <section id="listing" aria-labelledby="list-title">
+      <div class="section-heading"><div><h2 id="list-title" tabindex="-1" data-text="directory">Répertoire des exposants</h2><p id="count" role="status" aria-live="polite"></p></div><button id="search-toggle" class="text-button" type="button" aria-expanded="true" aria-controls="search-panel" data-text="hideSearch">Masquer la recherche</button></div>
+      <div class="search-panel" id="search-panel"><label for="search" data-text="searchLabel">Rechercher une entreprise</label><div class="search-input"><input id="search" type="search" placeholder="Nom de l’entreprise…" autocomplete="off"><button type="button" id="clear-search" aria-label="Effacer la recherche" hidden>×</button></div></div>
+      <div class="grid" id="grid"></div><p class="empty" id="empty" hidden data-text="empty">Aucun exposant ne correspond à cette recherche.</p>
+    </section>
+    <section id="detail" class="detail" hidden aria-labelledby="detail-title">
+      <a class="back" href="#liste" data-text="back">← Retour aux exposants</a>
+      <article class="detail-card"><header class="detail-head"><div class="detail-logo" id="detail-logo"></div><h2 id="detail-title" tabindex="-1"></h2><a class="button primary website" id="website" target="_blank" rel="noopener noreferrer" data-text="website">Voir le site web ↗</a></header><div class="description"><h3 data-text="about">À propos de l’exposant</h3><div id="detail-desc"></div></div></article>
+    </section>
+    <section id="plans" hidden aria-labelledby="plans-title">
+      <a class="back" href="#liste" data-text="back">← Retour aux exposants</a><h2 id="plans-title" tabindex="-1" data-text="plansTitle">Trouver les exposants</h2><p class="muted" data-text="plansIntro">Choisissez un espace pour consulter son plan interactif.</p>
+      <nav class="plan-options" id="plan-options" aria-label="Choisir un plan"><a class="plan-choice" href="#plan/arena" id="choice-arena"><span class="plan-icon" aria-hidden="true">01</span><span data-text="inside">Exposants intérieurs</span><span aria-hidden="true">↗</span></a><a class="plan-choice" href="#plan/atrium" id="choice-atrium"><span class="plan-icon" aria-hidden="true">02</span><span data-text="outside">Exposants extérieurs et Atrium</span><span aria-hidden="true">↗</span></a></nav>
+      <div id="map-container" hidden><div class="map-heading"><h3 id="map-title"></h3><a class="text-link" id="map-external" target="_blank" rel="noopener noreferrer" data-text="mapExternal">Ouvrir le plan dans un nouvel onglet ↗</a></div><div class="map-frame"><iframe id="map-frame" title="Plan interactif" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div></div>
+    </section>
+  </main>
+</div>
+<script src="data/exposants.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
